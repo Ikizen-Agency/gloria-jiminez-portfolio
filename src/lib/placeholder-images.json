@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "journalist-hero",
+      "description": "A professional portrait of a female journalist.",
+      "imageUrl": "https://images.unsplash.com/photo-1668262739221-f288d7ae5d12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8am91cm5hbGlzdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc1OTU0OTkwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "journalist portrait"
+    },
+    {
+      "id": "article-1",
+      "description": "An image representing an investigative report.",
+      "imageUrl": "https://images.unsplash.com/photo-1758525589346-59d1e527c574?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbnZlc3RpZ2F0aXZlJTIwam91cm5hbGlzbXxlbnwwfHx8fDE3NTk1NDk5MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "investigative journalism"
+    },
+    {
+      "id": "article-2",
+      "description": "An image for a political analysis article.",
+      "imageUrl": "https://images.unsplash.com/photo-1645902717892-14d99a4e8f43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb2xpdGljYWwlMjBhbmFseXNpc3xlbnwwfHx8fDE3NTk1NDk5MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "political analysis"
+    },
+    {
+      "id": "article-3",
+      "description": "An image for a cultural feature.",
+      "imageUrl": "https://images.unsplash.com/photo-1505428160878-8e349f4d301c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjdWx0dXJhbCUyMGV2ZW50fGVufDB8fHx8MTc1OTU0OTkwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cultural event"
+    },
+    {
+      "id": "article-4",
+      "description": "An image for a technology news story.",
+      "imageUrl": "https://images.unsplash.com/photo-1581092802212-36559f37c39d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0ZWNobm9sb2d5JTIwbmV3c3xlbnwwfHx8fDE3NTk1NDk5MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "technology news"
+    },
+    {
+      "id": "article-5",
+      "description": "An image for an international affairs article.",
+      "imageUrl": "https://images.unsplash.com/photo-1727610542348-9636c3b65d2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnbG9iYWwlMjBhZmZhaXJzfGVufDB8fHx8MTc1OTU0OTkwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "global affairs"
+    },
+    {
+      "id": "article-6",
+      "description": "An image for a local community story.",
+      "imageUrl": "https://images.unsplash.com/photo-1527525443983-6e60c75fff46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsb2NhbCUyMGNvbW11bml0eXxlbnwwfHx8fDE3NTk1NDk5MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "local community"
+    }
+  ]
 }
