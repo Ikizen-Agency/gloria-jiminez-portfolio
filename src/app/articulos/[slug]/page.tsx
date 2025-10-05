@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { articles } from '@/data/articles';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, User, Tag, Download, Share2, Twitter, Linkedin, Copy } from 'lucide-react';
+import { Calendar, User, Tag } from 'lucide-react';
 
 type Props = {
   params: { slug: string };
@@ -62,7 +62,7 @@ export default function ArticlePage({ params }: Props) {
   return (
     <article>
       {/* Article Header */}
-      <header className="relative h-[50vh] min-h-[300px] w-full">
+      <header className="relative h-[60vh] min-h-[400px] w-full">
         <Image
           src={article.heroImageUrl}
           alt={article.title}
@@ -71,8 +71,8 @@ export default function ArticlePage({ params }: Props) {
           priority
           data-ai-hint={article.heroImageHint}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
-        <div className="container relative z-10 flex h-full flex-col items-start justify-end pb-12">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/20" />
+        <div className="container relative z-10 flex h-full flex-col items-start justify-end pb-16">
           <div className="flex flex-wrap gap-2">
             {article.tags.map((tag) => (
               <Badge key={tag} variant="secondary" className="bg-opacity-80 backdrop-blur-sm">
