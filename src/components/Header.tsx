@@ -59,12 +59,6 @@ export function Header() {
         </nav>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Link href="/admin">
-            <Button variant="outline" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground hidden sm:flex">
-              Admin Panel
-            </Button>
-          </Link>
-          
           <Sheet>
             <SheetTrigger asChild>
               <Button
