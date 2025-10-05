@@ -98,9 +98,9 @@ export function Header() {
                     </div>
                     <div className="mt-auto">
                         <SheetClose asChild>
-                            <Link href="/admin" className="w-full">
+                            <Link href="/upload-article" className="w-full">
                                 <Button variant="outline" className="w-full">
-                                Admin Panel
+                                Subir Artículo
                                 </Button>
                             </Link>
                         </SheetClose>
