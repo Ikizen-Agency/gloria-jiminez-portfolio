@@ -1,12 +1,7 @@
 import Link from "next/link";
-import { Newspaper, Twitter, Linkedin } from "lucide-react";
+import { Newspaper } from "lucide-react";
 
 export function Footer() {
-  const socialLinks = [
-    { name: "Twitter", href: "#", icon: Twitter },
-    { name: "LinkedIn", href: "#", icon: Linkedin },
-  ];
-
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/articulos", label: "Artículos" },
@@ -19,7 +14,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border/40 bg-card/50">
       <div className="container mx-auto max-w-screen-2xl px-4 py-12">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <Link href="/" className="mb-4 flex items-center space-x-2">
               <Newspaper className="h-6 w-6 text-primary" />
@@ -50,17 +45,6 @@ export function Footer() {
                   </ul>
               </div>
           </nav>
-
-          <div className="flex flex-col items-center lg:items-end">
-            <h3 className="font-semibold text-foreground">Social</h3>
-            <div className="mt-4 flex space-x-4">
-              {socialLinks.map((social) => (
-                <Link key={social.name} href={social.href} aria-label={social.name} target="_blank" rel="noopener noreferrer">
-                  <social.icon className="h-6 w-6 text-foreground/60 transition-colors hover:text-primary" />
-                </Link>
-              ))}
-            </div>
-          </div>
         </div>
 
         <div className="mt-12 border-t border-border/40 pt-8 text-center text-sm text-foreground/60">
