@@ -98,24 +98,8 @@ export default function ArticlePage({ params }: Props) {
 
       {/* Article Body */}
       <div className="container py-12">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 lg:grid-cols-12">
-          <aside className="lg:col-span-3 lg:order-last">
-            <div className="sticky top-24 space-y-4">
-              <h3 className="font-semibold">Compartir</h3>
-              <div className="flex flex-col space-y-2">
-                 <Button variant="outline" className="justify-start"><Twitter className="mr-2 h-4 w-4" /> Twitter</Button>
-                 <Button variant="outline" className="justify-start"><Linkedin className="mr-2 h-4 w-4" /> LinkedIn</Button>
-                 <Button variant="outline" className="justify-start"><Copy className="mr-2 h-4 w-4" /> Copiar enlace</Button>
-              </div>
-              <h3 className="pt-4 font-semibold">Descargar</h3>
-              <Button variant="secondary" className="w-full justify-start">
-                <Download className="mr-2 h-4 w-4" />
-                Descargar PDF
-              </Button>
-            </div>
-          </aside>
-
-          <div className="prose prose-invert max-w-none lg:col-span-9 prose-headings:font-headline prose-p:text-foreground/80 prose-a:text-primary prose-blockquote:border-primary prose-strong:text-foreground">
+        <div className="mx-auto max-w-5xl">
+          <div className="prose prose-invert max-w-none prose-headings:font-headline prose-p:text-foreground/80 prose-a:text-primary prose-blockquote:border-primary prose-strong:text-foreground">
              <div dangerouslySetInnerHTML={{ __html: article.content }} />
           </div>
         </div>

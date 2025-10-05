@@ -42,12 +42,6 @@ export default function ContactPage() {
     form.reset();
   };
 
-  const socialLinks = [
-    { name: "Email", href: "mailto:contacto@gloriayolanda.com", icon: Mail, user: "contacto@gloriayolanda.com" },
-    { name: "Twitter", href: "#", icon: Twitter, user: "@gloriayolanda" },
-    { name: "LinkedIn", href: "#", icon: Linkedin, user: "Gloria Yolanda Jimenez" },
-  ];
-
   return (
     <div className="container py-16 md:py-24">
       <div className="mb-12 text-center">
@@ -57,9 +51,9 @@ export default function ContactPage() {
         </p>
       </div>
 
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 lg:grid-cols-2">
+      <div className="mx-auto max-w-xl">
         <div>
-          <h2 className="font-headline text-3xl font-bold">Enviar un Mensaje</h2>
+          <h2 className="font-headline text-3xl font-bold text-center">Enviar un Mensaje</h2>
           <Card className="mt-6 border-0 bg-transparent shadow-none">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -103,25 +97,6 @@ export default function ContactPage() {
               </form>
             </Form>
           </Card>
-        </div>
-
-        <div>
-           <h2 className="font-headline text-3xl font-bold">Otras Vías de Contacto</h2>
-           <div className="mt-6 space-y-6">
-             {socialLinks.map(link => (
-                <Link href={link.href} key={link.name} target="_blank" rel="noopener noreferrer" className="group">
-                    <Card className="p-4 transition-colors hover:bg-accent/50 hover:border-primary/30">
-                        <div className="flex items-center gap-4">
-                            <link.icon className="h-8 w-8 text-primary" />
-                            <div>
-                                <h3 className="font-semibold text-lg">{link.name}</h3>
-                                <p className="text-muted-foreground">{link.user}</p>
-                            </div>
-                        </div>
-                    </Card>
-                </Link>
-             ))}
-           </div>
         </div>
       </div>
     </div>
