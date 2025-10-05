@@ -2,7 +2,7 @@ import { UploadForm } from "@/components/UploadForm";
 
 export default function UploadArticlePage() {
   return (
-    <div className="container flex min-h-[calc(100vh-8rem)] items-center justify-center py-12">
+    <div className="container flex min-h-[calc(100vh-8rem)] flex-col items-center justify-center py-12">
       <div className="w-full max-w-4xl">
         <div className="mb-8 text-center">
             <h1 className="font-headline text-4xl font-bold">Crear Artículo</h1>
