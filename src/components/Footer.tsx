@@ -70,7 +70,7 @@ export function Footer() {
           <p className="mt-1">
             Hecho por{" "}
             <a
-              href="https://ikizen.com"
+              href="https://ikizen.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-primary/80 hover:text-primary hover:underline"
