@@ -85,4 +85,21 @@ export const articles: Article[] = [
     heroImageHint: findImage('article-6').imageHint,
     content: '<p>Contenido del artículo sobre iniciativas comunitarias...</p>',
   },
+  {
+    slug: 'periodismo-en-la-encrucijada-digital',
+    title: 'Periodismo en la Encrucijada Digital',
+    excerpt: 'Un análisis sobre los desafíos que enfrenta el periodismo tradicional en la era de la desinformación y las redes sociales.',
+    date: '31 de Julio, 2024',
+    author: 'Gloria Yolanda Jimenez',
+    tags: ['Periodismo', 'Tecnología', 'Sociedad'],
+    heroImageUrl: findImage('article-7').imageUrl,
+    heroImageHint: findImage('article-7').imageHint,
+    content: `
+      <p>La era digital ha transformado radicalmente el panorama mediático. La velocidad de la información, el auge de las redes sociales como fuente de noticias y la proliferación de la desinformación plantean desafíos sin precedentes para el periodismo tradicional.</p>
+      <h2 class="font-headline text-2xl font-bold my-4">El Reto de la Veracidad</h2>
+      <p>En un entorno saturado de información, la verificación de hechos se vuelve más crucial y difícil que nunca. Analizamos las herramientas y metodologías que los periodistas están adoptando para combatir las 'fake news' y mantener la confianza del público.</p>
+      <blockquote class="border-l-4 border-primary pl-4 my-4 italic">"La credibilidad es nuestro activo más valioso. Perderla es perderlo todo", afirma un veterano editor.</blockquote>
+      <p>Exploramos también los nuevos modelos de negocio que están surgiendo para financiar un periodismo de calidad, desde las suscripciones digitales hasta el apoyo de fundaciones, en un intento por asegurar la sostenibilidad de una prensa libre e independiente.</p>
+    `,
+  },
 ];
