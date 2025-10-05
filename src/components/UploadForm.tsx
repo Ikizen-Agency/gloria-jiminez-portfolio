@@ -128,21 +128,6 @@ export function UploadForm() {
                     <FormItem>
                        <div className="flex items-center justify-between">
                          <FormLabel>Extracto / Resumen</FormLabel>
-                          <Button
-                            type="button"
-                            variant="ghost"
-                            size="sm"
-                            onClick={handleGenerateSummary}
-                            disabled={isGenerating}
-                            className="text-xs text-primary h-auto p-1"
-                          >
-                            {isGenerating ? (
-                              <Loader2 className="mr-1 h-3 w-3 animate-spin" />
-                            ) : (
-                              <Sparkles className="mr-1 h-3 w-3" />
-                            )}
-                            Generar con IA
-                          </Button>
                        </div>
                       <FormControl>
                         <Textarea placeholder="Un resumen corto y atractivo para la vista previa..." {...field} />
