@@ -41,18 +41,6 @@ export default function ServicesPage() {
         ))}
       </div>
 
-      <div className="mt-16 text-center">
-        <h3 className="font-headline text-2xl font-bold">¿Tienes un proyecto en mente?</h3>
-        <p className="mx-auto mt-2 max-w-xl text-foreground/70">
-          Contacta conmigo para hablar sobre cómo podemos colaborar y te prepararé una propuesta a medida sin compromiso.
-        </p>
-        <Link href="/contacto" className="mt-6 inline-block">
-          <Button size="lg">
-            Hablemos
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-        </Link>
-      </div>
     </div>
   );
 }

@@ -6,7 +6,6 @@ export function Footer() {
     { href: "/", label: "Home" },
     { href: "/articulos", label: "Artículos" },
     { href: "/servicios", label: "Servicios" },
-    { href: "/contacto", label: "Contacto" },
     { href: "/politica-de-privacidad", label: "Política de Privacidad" },
     { href: "/aviso-legal", label: "Aviso Legal" },
   ];
@@ -31,7 +30,7 @@ export function Footer() {
               <div>
                   <h3 className="font-semibold text-foreground">Navegación</h3>
                   <ul className="mt-4 space-y-2 text-sm text-foreground/60">
-                      {navLinks.slice(0,4).map(link => (
+                      {navLinks.slice(0,3).map(link => (
                           <li key={link.href}><Link href={link.href} className="hover:text-primary transition-colors">{link.label}</Link></li>
                       ))}
                   </ul>
@@ -39,7 +38,7 @@ export function Footer() {
               <div>
                   <h3 className="font-semibold text-foreground">Legal</h3>
                   <ul className="mt-4 space-y-2 text-sm text-foreground/60">
-                      {navLinks.slice(4,6).map(link => (
+                      {navLinks.slice(3,5).map(link => (
                           <li key={link.href}><Link href={link.href} className="hover:text-primary transition-colors">{link.label}</Link></li>
                       ))}
                   </ul>
