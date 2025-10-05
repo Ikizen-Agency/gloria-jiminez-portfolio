@@ -5,7 +5,7 @@ import { services } from '@/data/services';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { ArticleCard } from '@/components/ArticleCard';
-import { ArrowRight, CheckCircle, Newspaper } from 'lucide-react';
+import { ArrowRight, CheckCircle, Newspaper, MessageCircle } from 'lucide-react';
 
 export default function Home() {
   const latestArticles = articles.slice(0, 3);
@@ -33,12 +33,21 @@ export default function Home() {
           <p className="mt-4 max-w-xl text-lg text-white/80">
             Periodismo de investigación, análisis y crónicas que dan voz a las historias que importan.
           </p>
-          <Link href="/articulos" className="mt-8">
-            <Button size="lg">
-              Leer Artículos
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <Link href="/articulos">
+              <Button size="lg">
+                Leer Artículos
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            {/* Asegúrate de reemplazar 1234567890 con tu número de teléfono real de WhatsApp, incluyendo el código de país. */}
+            <Link href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-black">
+                    Contactar por WhatsApp
+                    <MessageCircle className="ml-2 h-5 w-5" />
+                </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
