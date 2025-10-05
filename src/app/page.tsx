@@ -14,31 +14,32 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[400px] w-full text-white">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt="Gloria Yolanda Jimenez"
-            fill
-            className="object-cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-        <div className="container relative z-10 flex h-full flex-col items-start justify-end pb-16">
+      <section className="grid min-h-screen grid-cols-1 md:grid-cols-2">
+        <div className="flex flex-col items-start justify-center p-8 md:p-16">
           <h1 className="font-headline text-5xl font-bold md:text-7xl">
             Gloria Yolanda Jimenez
           </h1>
-          <p className="mt-4 max-w-xl text-lg text-foreground/80">
+          <p className="mt-4 max-w-xl text-lg text-foreground/70">
             Periodismo de investigación, análisis y crónicas que dan voz a las historias que importan.
           </p>
           <Link href="/articulos" className="mt-8">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
+            <Button size="lg">
               Leer Artículos
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
+        </div>
+        <div className="relative min-h-[50vh] md:min-h-screen">
+          {heroImage && (
+            <Image
+              src={heroImage.imageUrl}
+              alt="Gloria Yolanda Jimenez"
+              fill
+              className="object-cover"
+              priority
+              data-ai-hint={heroImage.imageHint}
+            />
+          )}
         </div>
       </section>
 
