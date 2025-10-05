@@ -1,10 +1,10 @@
 {
   "placeholderImages": [
     {
-      "id": "journalist-hero",
-      "description": "A professional portrait of a female journalist.",
-      "imageUrl": "https://images.unsplash.com/photo-1668262739221-f288d7ae5d12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8am91cm5hbGlzdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc1OTU0OTkwNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "journalist portrait"
+      "id": "andalucia-hero",
+      "description": "Scenic view of Andalusia, Spain.",
+      "imageUrl": "https://images.unsplash.com/photo-1595130761271-87a15a63901b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhbmRhbHVzaWElMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzU5NTUwMTU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Andalusia landscape"
     },
     {
       "id": "article-1",

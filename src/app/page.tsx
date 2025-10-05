@@ -9,17 +9,28 @@ import { ArrowRight, CheckCircle, Newspaper } from 'lucide-react';
 
 export default function Home() {
   const latestArticles = articles.slice(0, 3);
-  const heroImage = PlaceHolderImages.find(p => p.id === 'journalist-hero');
+  const heroImage = PlaceHolderImages.find(p => p.id === 'andalucia-hero');
 
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="grid min-h-screen grid-cols-1 md:grid-cols-2">
-        <div className="flex flex-col items-start justify-center p-8 md:p-16">
+      <section className="relative flex h-screen w-full flex-col items-center justify-center text-center text-white">
+        {heroImage && (
+            <Image
+              src={heroImage.imageUrl}
+              alt="Paisaje de Andalucía"
+              fill
+              className="object-cover"
+              priority
+              data-ai-hint={heroImage.imageHint}
+            />
+          )}
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 flex flex-col items-center justify-center p-8">
           <h1 className="font-headline text-5xl font-bold md:text-7xl">
             Gloria Yolanda Jimenez
           </h1>
-          <p className="mt-4 max-w-xl text-lg text-foreground/70">
+          <p className="mt-4 max-w-xl text-lg text-white/80">
             Periodismo de investigación, análisis y crónicas que dan voz a las historias que importan.
           </p>
           <Link href="/articulos" className="mt-8">
@@ -28,18 +39,6 @@ export default function Home() {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
-        </div>
-        <div className="relative min-h-[50vh] md:min-h-screen">
-          {heroImage && (
-            <Image
-              src={heroImage.imageUrl}
-              alt="Gloria Yolanda Jimenez"
-              fill
-              className="object-cover"
-              priority
-              data-ai-hint={heroImage.imageHint}
-            />
-          )}
         </div>
       </section>
 
