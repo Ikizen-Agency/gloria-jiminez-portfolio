@@ -18,7 +18,7 @@ export default function Home() {
         {heroImage && (
             <Image
               src={heroImage.imageUrl}
-              alt="Paisaje de Andalucía"
+              alt={heroImage.description || "Paisaje de Andalucía"}
               fill
               className="object-cover"
               priority
