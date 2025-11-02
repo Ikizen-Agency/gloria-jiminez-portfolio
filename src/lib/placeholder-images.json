@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "andalucia-hero",
-      "description": "Scenic view of Andalusia, Spain.",
+      "description": "Scenic view of Andalucia, Spain.",
       "imageUrl": "https://images.unsplash.com/photo-1595130761271-87a15a63901b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhbmRhbHVzaWElMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzU5NTUwMTU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "Andalusia landscape"
+      "imageHint": "Andalucia landscape"
     },
     {
       "id": "article-1",

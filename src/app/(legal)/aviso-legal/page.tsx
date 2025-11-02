@@ -1,6 +1,6 @@
 export default function AvisoLegalPage() {
     return (
-      <div className="container mx-auto max-w-3xl py-16">
+      <div className="container mx-auto max-w-3xl py-16 p-4">
         <h1 className="font-headline text-4xl font-bold mb-8">Aviso Legal</h1>
         <div className="prose prose-invert max-w-none prose-headings:font-headline prose-a:text-primary">
           <p>

@@ -33,14 +33,6 @@ export function Header() {
       isScrolled ? "border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60" : "bg-transparent"
     )}>
       <div className="container flex h-16 max-w-screen-2xl items-center">
-        <div className="mr-4 flex items-center">
-          <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Newspaper className="h-6 w-6 text-primary" />
-            <span className="font-headline text-lg font-bold sm:inline-block">
-              Gloria Yolanda Jimenez
-            </span>
-          </Link>
-        </div>
 
         <nav className="hidden flex-1 items-center justify-center gap-6 text-sm font-medium md:flex">
           {navLinks.map((link) => (
@@ -94,15 +86,6 @@ export function Header() {
                         </Link>
                       </SheetClose>
                     ))}
-                    </div>
-                    <div className="mt-auto">
-                        <SheetClose asChild>
-                            <Link href="/upload-article" className="w-full">
-                                <Button variant="outline" className="w-full">
-                                Subir Artículo
-                                </Button>
-                            </Link>
-                        </SheetClose>
                     </div>
                 </nav>
             </SheetContent>
